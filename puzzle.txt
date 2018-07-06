@@ -1,0 +1,26 @@
+T=[[0,1,2],[3,4,5],[6,7,None]]
+
+for r in range(3):
+    for c in range(3):
+        print(T[r][c], end="\n")
+
+T=[[0,1,2],[3,4,5],[6,7,None]]
+
+for r in range(3):
+    for c in range(3):
+        print(''if T[r][c] is None else T[r][c], end="")
+    print()
+
+m= int(input())
+
+tr = None
+for r in range(3):
+    for c in range(3):
+        if T[r][c] == m:
+            tr, tc = r, c
+
+if tr is None:
+    print('Incorrect')
+else:
+    if (T[tr], [tc - 1]) == None:
+        
